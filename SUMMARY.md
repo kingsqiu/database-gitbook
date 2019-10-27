@@ -1,7 +1,7 @@
 # Summary
 
-  * [Introduction](README.md)
-  * [mysql](mysql中文/mysql简介.md)
+  * [数据库笔记目录](README.md)
+  * [MySQL](mysql/mysql简介.md)
+  * [Redis](redis/redis简介)
 
-- [测试](测试文件夹/测试文件.md)
-
+- MongoDB
