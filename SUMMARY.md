@@ -4,7 +4,12 @@
   * [MySQL](mysql/mysql简介.md)
   * [Redis](redis/redis简介)
     - redis简介
-    - redis数据结构
+    - [redis数据结构简介](redis/数据结构与对应命令/数据结构概述.md)
+      - [字符串类型及命令](redis/数据结构与对应命令/str.md)
+      - [列表类型及命令](redis/数据结构与对应命令/list.md)
+      - [集合类型及命令](redis/数据结构与对应命令/set.md)
+      - [散列类型及命令](redis/数据结构与对应命令/hash.md)
+      - [有序集合类型及命令](redis/数据结构与对应命令/zset.md)
     - redis命令
 
 - MongoDB
