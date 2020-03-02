@@ -17,16 +17,16 @@
 
 有序集合的范围型数据获取命令和范围型数据删除命令，以及并集命令和交集命令
 
-| 命令               | 用例和描述 |
-| ------------------ | ---------- |
-| `ZREVRANK`         |            |
-| `ZREVRANGE`        |            |
-| `ZTANGEBYSCORE`    |            |
-| `ZREVRANGEBYSCORE` |            |
-| `ZREMRANGEBYRANK`  |            |
-| `ZREMRANGEBYSCORE` |            |
-| `ZINTERSTORE`      |            |
-| `ZUNIONSTORE`      |            |
+| 命令               | 用例和描述                                                   |
+| ------------------ | ------------------------------------------------------------ |
+| `ZREVRANK`         | `ZREVRANK` `key-name` `member`<br />返回有序集合里成员`member`的排名，成员按照分值从大到小排列 |
+| `ZREVRANGE`        | `ZREVRANGE` `key-name` `start` `stop` `[WITHSCORES]`<br />返回有序集合给定排名范围内的成员，成员按照分值从大到小排列 |
+| `ZTANGEBYSCORE`    | `ZRANGEBYSCORE` `key` `min` `max` `[WITHSCORES]` `[LIMIT offset count]`<br />返回有序集合中，分值介于min和max之间的所有成员 |
+| `ZREVRANGEBYSCORE` | `ZREVRANGEBYSCORE` `key` `max` `min` `[WITHSCORES]` `[LIMIT offset count]`<br />获取有序集合中分值介于min和max之间的所有成员，并按照分值从大到小的顺序来返回它们 |
+| `ZREMRANGEBYRANK`  | `ZREMRANGEBYRANK` `key-name` `start` `stop`<br />移除有序集合中排名介于`start`和`stop`之间的所有成员 |
+| `ZREMRANGEBYSCORE` | `ZREMRANGEBYSCORE` `key-name` `min` `max`<br />移除有序集合中分值介于`min`和`max`之间的所有成员 |
+| `ZINTERSTORE`      | `ZINTERSTORE` `dest-key` `key-count` `key` `[key ...]` `[WEIGHTS weight [weight ...]]``[AGGREGATE SUM|MIN|MAX]`<br />对给定的有序集合执行类似于集合的交集运算 |
+| `ZUNIONSTORE`      | `ZUNIONSTORE` `dest-key` `key-count` `key` `[key ...]` `[WEIGHTS weight [weight ...]]` `[AGGREGATE SUM|MIN|MAX]`<br />对给定的有序集合执行类似于集合的并集运算 |
 
 
 
